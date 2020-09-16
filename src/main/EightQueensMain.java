@@ -22,6 +22,14 @@ public class EightQueensMain {
 		board[file][rank] = '\0';
 	}
 	
+	public static void checkIfAttacking(char board[][], int file, int rank) {
+		
+	}
+	
+	public static void solveEightQueens(char board[][]) {
+		
+	}
+	
 	public static void main(String[] args) {
 		char board[][] = new char[8][8];
 		
