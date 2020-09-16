@@ -14,8 +14,12 @@ public class EightQueensMain {
 		}
 	}
 	
-	public static void placeQueen(char board[][], int rank, int file) {
-		
+	public static void placeQueen(char board[][], int file, int rank) {
+		board[file][rank] = 'Q';
+	}
+	
+	public static void clearSpace(char board[][], int file, int rank) {
+		board[file][rank] = '\0';
 	}
 	
 	public static void main(String[] args) {
