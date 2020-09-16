@@ -3,15 +3,19 @@ package main;
 public class EightQueensMain {
 
 	public static void printBoard(char board[][]) {
-		for(int rank = 0; rank < board.length; rank++) {
-			for(int file = 0; file < board[rank].length; file++) {
+		for(int file = 0; file < board.length; file++) {
+			for(int rank = 0; rank < board[file].length; rank++) {
 				System.out.print("[");
-				char piece = board[rank][file] == '\0' ? ' ' : board[rank][file];
+				char piece = board[file][rank] == '\0' ? ' ' : board[file][rank];
 				System.out.print(piece);
 				System.out.print("]");
 			}
 			System.out.println();
 		}
+	}
+	
+	public static void placeQueen(char board[][], int rank, int file) {
+		
 	}
 	
 	public static void main(String[] args) {
